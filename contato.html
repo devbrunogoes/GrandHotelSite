@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Grand Hotel - Contato </title>
+    <link rel="shortcut icon" href="assets/img/logo-grandhotel-semf-aba.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav class="nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="pacotes.html">Pacotes</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+            <a href="reserva.html" class="btn-reserva">Reserve já</a>
+        </nav>
+    </header>
+    <main class="main main-contato">
+        <form action="" class="form-contato" aria-labelledby="titulo-contato" aria-describedby="instrucao-formulario mensagens-feedback instrucao-obrigatorio">
+            <h2 id="titulo-contato">Contato</h2>
+            <p id="instrucao-formulario">Entre em contato conosco preenchendo o formulário abaixo.</p>
+            <div id="mensagens-feedback" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+            <hr>
+            <fieldset class="grupo-campos" aria-describedby="instrucao-obrigatorio">
+                <legend>Informações de contato</legend>
+                <div class="campo-form">
+                    <label for="nome">Nome <em>*</em></label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo..." autocomplete="name" required>
+                </div>
+                <div class="campo-form">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone..." autocomplete="tel">
+                </div>
+                <div class="campo-form">
+                    <label for="email">Email <em>*</em></label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email..." autocomplete="email" required>
+                </div>
+                <div class="campo-form">
+                    <label for="mensagem">Mensagem <em>*</em></label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." aria-describedby="mensagem-ajuda" required></textarea>
+                    <span id="mensagem-ajuda" class="visually-hidden">Descreva a sua necessidade ou dúvida com o máximo de detalhes possível.</span>
+                </div>
+            </fieldset>
+            <p id="instrucao-obrigatorio">Todos os campos marcados com <em>*</em> são obrigatórios.</p>
+            <button type="submit" class="btn-reserva">Enviar Mensagem</button>
+        </form>
+    </main>
+    <footer>
+        <div class="container footer-inner">
+            <div class="col-footer">
+                <h3>Grand Hotel 1908</h3>
+                <p>Rede internacional com foco em conforto,
+                    tradição e hospitalidade. Desde 1908.</p>
+            </div>
+
+            <div class="col-footer">
+                <strong>Contatos</strong>
+                <div class="top-div-footer">Telefone: +55 (11) 1234-5678<br>email:
+                    contato@grandhotel1908.com</div>
+            </div>
+
+            <div class="col-footer sociais">
+                <strong>Siga-nos</strong>
+                <div class="top-div-footer">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

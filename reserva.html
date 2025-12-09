@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Grand Hotel - Reserva </title>
+    <link rel="shortcut icon" href="assets/img/logo-grandhotel-semf-aba.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav class="nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="pacotes.html">Pacotes</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <a href="reserva.html" class="btn-reserva" aria-current="page">Reserve já</a>
+        </nav>
+    </header>
+    <main class="main main-reserva">
+        <form action="" class="form-contato" aria-describedby="instrucao-obrigatorio">
+            <h2>Agendamento</h2>
+            <p>Bem vindo ao nosso hotel! Por favor, preencha o formulário abaixo para reservar sua estadia.</p>
+            <hr>
+
+            <fieldset class="grupo-campos">
+                <legend>Informações pessoais</legend>
+                <div class="name" role="group" aria-labelledby="rotulo-nome">
+                    <div class="nome">
+                        <label id="rotulo-nome" for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"
+                            >
+                    </div>
+                    <div class="sobrenome">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome"
+                            >
+                    </div>
+                </div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" >
+                <label for="email">Email <span aria-hidden="true"><em>*</em></span></label>
+                <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" 
+                    required aria-required="true" aria-describedby="instrucao-obrigatorio">
+            </fieldset>
+
+            <fieldset class="grupo-campos">
+                <legend>Detalhes da estadia</legend>
+                <label for="checkin">Data de Check-in <span aria-hidden="true"><em>*</em></span></label>
+                <input type="date" id="checkin" name="checkin" required aria-required="true"
+                    aria-describedby="instrucao-obrigatorio" >
+
+                <div class="horarios" role="group" aria-labelledby="rotulo-horarios">
+                    <div class="checkin">
+                        <label id="rotulo-horarios" for="hora-checkin">Hora de Check-in <span
+                                aria-hidden="true"><em>*</em></span></label>
+                        <input type="time" id="hora-checkin" name="horacheckin" required aria-required="true"
+                            aria-describedby="instrucao-obrigatorio" >
+                    </div>
+                    <div class="checkout">
+                        <label for="hora-checkout">Hora de Check-out <span aria-hidden="true"><em>*</em></span></label>
+                        <input type="time" id="hora-checkout" name="horacheckout" required aria-required="true"
+                            aria-describedby="instrucao-obrigatorio">
+                    </div>
+                </div>
+
+                <label for="mensagem">Mensagem <span aria-hidden="true"><em>*</em></span></label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required aria-required="true"
+                    aria-describedby="instrucao-obrigatorio"></textarea>
+            </fieldset>
+
+            <p id="instrucao-obrigatorio">Todos os campos marcados com <em>*</em> são obrigatórios.</p>
+            <button type="submit" class="btn-reserva" aria-label="Enviar pedido de reserva">Enviar reserva</button>
+        </form>
+    </main>
+    <footer>
+        <div class="container footer-inner">
+            <div class="col-footer">
+                <h3>Grand Hotel 1908</h3>
+                <p>Rede internacional com foco em conforto,
+                    tradição e hospitalidade. Desde 1908.</p>
+            </div>
+
+            <div class="col-footer">
+                <strong>Contatos</strong>
+                <div class="top-div-footer">Telefone: +55 (11) 1234-5678<br>email:
+                    contato@grandhotel1908.com</div>
+            </div>
+
+            <div class="col-footer sociais">
+                <strong>Siga-nos</strong>
+                <div class="top-div-footer">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
